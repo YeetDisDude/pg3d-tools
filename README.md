@@ -25,7 +25,7 @@ Its best if you use the New Terminal from the Microsoft Store [here](https://app
 - Get all scene names
   - Gets all scene names as it says
 - Send Websocket Message
-  - Lets you send a message to Pixel Gun 3D's Websocket [YOU WILL GET IP BANED IF MESSAGES ARE UNENCRYPTED!!!]
+  - Lets you send a message to Pixel Gun 3D's Websocket [YOU WILL GET IP BANNED IF MESSAGES ARE UNENCRYPTED!!!] (If you somehow know how to encrypt using the websocket's encryption algorithm, be sure to paste it in __WITHOUT BASE64__)
 - Find Weapon ID
   - Lets yous search through all weapon ids (like https://yeetdisdude.xyz/weaponids)
 - Find Wear ID

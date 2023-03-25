@@ -4,6 +4,7 @@ A Pixel Gun 3D Tool made in Python for Modding and other purposes.
 # Usage
 1. Download Pixel Gun 3D Tools.py from releases tab or download the code as zip
 2. Run the exe or run py pg3dtools.py if you installed the python script
+Its best if you use the New Terminal from the Microsoft Store [here](https://apps.microsoft.com/store/detail/windows-terminal/9N0DX20HK701)
 
 # Features
 - Check ban
@@ -33,7 +34,9 @@ A Pixel Gun 3D Tool made in Python for Modding and other purposes.
 - Search Websocket command
   - Search for pg3d's websocket command
   
-![Image](/assets/images/tux.png)
+![Image1](/image/pg3dtools1.png)
+![Image2](/image/pg3dtools2.png)
+![Image3](/image/pg3dtools3.png)
 
 # Credits
 - [TonicBoomerKewl](https://github.com/TonicBoomerKewl) - for the Item Record and Websocket Commands JSON

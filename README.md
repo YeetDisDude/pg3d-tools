@@ -8,6 +8,7 @@ A Pixel Gun 3D Tool made in Python for Modding and other purposes.
 
 Its best if you use the New Terminal from the Microsoft Store [here](https://apps.microsoft.com/store/detail/windows-terminal/9N0DX20HK701)
 
+**Note: enter 0 on any page to exit it**
 # Features
 - Check ban
   - Check if an ID is banned from PG3D

@@ -54,7 +54,7 @@ def clear():
         os.system("clear")
 
 VERSION_URL = "https://raw.githubusercontent.com/YeetDisDude/pg3d-tools/main/version.txt"
-VERSION = "0.11"
+VERSION = "0.1.1"
 
 clear()
     
@@ -90,6 +90,7 @@ def checkUpdate():
     latest_version = r.text.strip()
     if latest_version != VERSION:
         console.print(f"[red][!][/] PG3D Tools version [underline bold]{VERSION}[/] is outdated. Please download the new version from GitHub.\n[underline]https://github.com/YeetDisDude/pg3d-tools[/] Latest | version {r.text}", highlight=False)
+        exit = input(f"{Fore.LIGHTGREEN_EX}[!]{Fore.RESET} Press enter to exit...")
         sys.exit()
     else:
         console.print(f"[green][+][/][underline bold] PG3D Tools is up-to-date.[/]")
@@ -118,7 +119,7 @@ while True:
         console.print(banner, justify="center"); console.print("Credits", justify="center")
         console.print(f"""
 [underline]YeetDisDude#0001[/] - Making this | {hyperlink("https://github.com/YeetDisDude")}
-[underline]Pulsed#1874[/] - Making Websocket Feature | {hyperlink("https://github.com/ChrxnZ")}
+[underline]Pulsed#1874[/] - Making Import Handler & Websocket Feature | {hyperlink("https://github.com/ChrxnZ")}
 [underline]TonicBoomerKewl[/] - Item Record and ws cmds | {hyperlink("https://github.com/TonicBoomerKewl")}\n""", highlight=False)
         input(f"{Fore.LIGHTGREEN_EX}[!]{Fore.RESET} Press enter to exit...")
 

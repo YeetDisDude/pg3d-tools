@@ -1,25 +1,50 @@
-import os, time, sys, random, json, time
+import os, time, sys, random, json, time, asyncio
 filepath = os.path.abspath(__file__)
 filename = os.path.basename(__file__)
 folderpath = os.getcwd()
 operatingsys = os.name
+needed = []
+
 try:
     from rich.console import Console; console = Console()
     from rich.text import Text
     from rich import print
     from rich.panel import Panel
     from colorama import Fore, init
-    import httpx, requests, pyperclip, urllib, threading, asyncio
+    import httpx, requests, pyperclip, urllib, threading
     from rich.progress import track
     from websockets import connect
-except:
-    requirements = ["rich", "httpx", "colorama", "datetime", "requests", "pyperclip", "websockets"]
-    count = 0
-    print("[i] Installing Required Modules...")
-    for _ in requirements:
-        os.system(f"pip install {_} -q"); count += 1
-        print(f"[!] Installed Module {_} | {count} / {len(requirements)}")
-    time.sleep(2); os.system("cls"); print("[!] Running the script.."); os.system(f'py "{filename}"')
+except Exception:
+    if "Console" not in globals():
+        needed.append("rich")
+    if "Fore" not in globals():
+        needed.append("colorama")
+    if "httpx" not in globals():
+        needed.append("httpx")
+    if "requests" not in globals():
+        needed.append("requests")
+    if "pyperclip" not in globals():
+        needed.append("pyperclip")
+    if "urllib" not in globals():
+        needed.append("urllib")
+    if "threading" not in globals():
+        needed.append("threading")
+    if "connect" not in globals():
+        needed.append("websockets")
+
+if len(needed) != 0:
+    for module in needed:
+        print("[i] Installing Required Modules...")
+        os.system(f"pip3 install {module}")
+
+from rich.console import Console; console = Console()
+from rich.text import Text
+from rich import print
+from rich.panel import Panel
+from colorama import Fore, init
+import httpx, requests, pyperclip, urllib, threading, asyncio
+from rich.progress import track
+from websockets import connect
 
 
 def clear():
@@ -29,7 +54,7 @@ def clear():
         os.system("clear")
 
 VERSION_URL = "https://raw.githubusercontent.com/YeetDisDude/pg3d-tools/main/version.txt"
-VERSION = "0.1"
+VERSION = "0.11"
 
 clear()
     

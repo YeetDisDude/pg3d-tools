@@ -9,13 +9,13 @@ Its best if you use the New Terminal from the Microsoft Store [here](https://app
 
 # Features
 - Check ban
-  - check if an ID is banned from PG3D
+  - Check if an ID is banned from PG3D
 - Download Dump.cs Files
   - Allows you to download pg3d's Dump.cs (its IL2CPP, not CPP2IL)
 - Download Assembly-CSharp.dll
   - Lets you download the assembly files, dont worry, it will be updated as new versions release
 - Get cheater currency threshold
-  - See the currency threshold for pg3d's servers (its outdated)
+  - Displays the (OUTDATED) currency threshold for PG3D's servers
 - Update player logs
   - Lets you choose type of currency and ID to update in the player's logs, it doesn't actually add the currency but potentially adds it to the developer's logs
 - Spam lightmap contacts
@@ -33,7 +33,7 @@ Its best if you use the New Terminal from the Microsoft Store [here](https://app
 - Find Item Record
   - Search for an item's Item Record
 - Search Websocket command
-  - Search for pg3d's websocket command
+  - Search for PG3D's websocket command(s)
   
 ![Image1](/image/pg3dtools1.png)
 ![Image2](/image/pg3dtools2.png)

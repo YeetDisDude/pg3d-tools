@@ -1,41 +1,34 @@
-import os, time, sys, random, json, time, asyncio
+import os, time, sys, random, json, time, asyncio, subprocess
 filepath = os.path.abspath(__file__)
 filename = os.path.basename(__file__)
 folderpath = os.getcwd()
 operatingsys = os.name
 needed = []
 
-try:
-    from rich.console import Console; console = Console()
-    from rich.text import Text
-    from rich import print
-    from rich.panel import Panel
-    from colorama import Fore, init
-    import httpx, requests, pyperclip, urllib, threading
-    from rich.progress import track
-    from websockets import connect
-except Exception:
-    if "Console" not in globals():
-        needed.append("rich")
-    if "Fore" not in globals():
-        needed.append("colorama")
-    if "httpx" not in globals():
-        needed.append("httpx")
-    if "requests" not in globals():
-        needed.append("requests")
-    if "pyperclip" not in globals():
-        needed.append("pyperclip")
-    if "urllib" not in globals():
-        needed.append("urllib")
-    if "threading" not in globals():
-        needed.append("threading")
-    if "connect" not in globals():
-        needed.append("websockets")
+modules = [
+    ("rich", "from rich.console import Console"),
+    ("colorama", "import colorama"),
+    ("httpx", "import httpx"),
+    ("requests", "import requests"),
+    ("pyperclip", "import pyperclip"),
+    ("urllib", "import urllib"),
+    ("threading", "import threading"),
+    ("websockets", "from websockets import connect"),
+]
+
+needed = []
+for module, import_string in modules:
+    try:
+        exec(import_string)
+    except ImportError:
+        needed.append(module)
 
 if len(needed) != 0:
+    count = 0
     for module in needed:
-        print("[i] Installing Required Modules...")
-        os.system(f"pip3 install {module}")
+        count += 1
+        print(f"[i] Installing Required Modules... | {count} / {len(needed)}")
+        subprocess.check_call(["pip3", "install", module, "-q"])
 
 from rich.console import Console; console = Console()
 from rich.text import Text
@@ -54,7 +47,7 @@ def clear():
         os.system("clear")
 
 VERSION_URL = "https://raw.githubusercontent.com/YeetDisDude/pg3d-tools/main/version.txt"
-VERSION = "0.1.1"
+VERSION = "0.1.2"
 
 clear()
     

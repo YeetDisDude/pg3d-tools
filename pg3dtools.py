@@ -74,7 +74,7 @@ def hyperlink(url: str):
 
 def panel():
     clear()
-    console.print(Panel.fit(console_text, title=f"Pixel Gun 3D Tools [underline indian_red]{VERSION}", subtitle="[underline bold]https://yeetdisdude.xyz"), justify="center")
+    console.print(Panel.fit(console_text, title=f"Pixel Gun 3D Tools [underline indian_red]{VERSION}", subtitle="[underline bold]https://yeetdisdude.xyz | discord.gg/wnr9ME7enQ"), justify="center")
 
 def encodejsonurl(dict):
     return urllib.parse.quote(json.dumps([dict]))

@@ -48,7 +48,7 @@ def clear():
         os.system("clear")
 
 VERSION_URL = "https://raw.githubusercontent.com/YeetDisDude/pg3d-tools/main/version.txt"
-VERSION = "0.1.2"
+VERSION = "0.1.3"
 
 clear()
     

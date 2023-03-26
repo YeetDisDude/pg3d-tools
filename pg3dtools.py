@@ -14,6 +14,7 @@ modules = [
     ("urllib", "import urllib"),
     ("threading", "import threading"),
     ("websockets", "from websockets import connect"),
+    ("pystyle", "from pystyle import Add, Center, Anime, Colors, Colorate, Write, System"),
 ]
 
 needed = []
@@ -31,13 +32,13 @@ if len(needed) != 0:
         subprocess.check_call(["pip3", "install", module, "-q"])
 
 from rich.console import Console; console = Console()
-from rich.text import Text
 from rich import print
 from rich.panel import Panel
-from colorama import Fore, init
+from colorama import Fore
 import httpx, requests, pyperclip, urllib, threading, asyncio
 from rich.progress import track
 from websockets import connect
+from pystyle import Add, Center, Anime, Colors, Colorate, Write, System
 
 
 def clear():
@@ -53,12 +54,12 @@ clear()
     
 banner = f"""
 
-[indian_red]██████[light_salmon1]╗  [indian_red]██████[light_salmon1]╗ [indian_red]██████[light_salmon1]╗ [indian_red]██████[light_salmon1]╗   [indian_red]████████[light_salmon1]╗ [indian_red]█████[indian_red]╗  [indian_red]█████[light_salmon1]╗ [indian_red]██[light_salmon1]╗      [indian_red]██████[light_salmon1]╗
+[indian_red]██████[light_salmon1]╗  [indian_red]██████[light_salmon1]╗ [indian_red]██████[light_salmon1]╗ [indian_red]██████[light_salmon1]╗   [indian_red]████████[light_salmon1]╗ [indian_red]█████[light_salmon1]╗  [indian_red]█████[light_salmon1]╗ [indian_red]██[light_salmon1]╗      [indian_red]██████[light_salmon1]╗
 [indian_red]██[light_salmon1]╔══[indian_red]██[light_salmon1]╗[indian_red]██[light_salmon1]╔════╝ ╚════[indian_red]██[light_salmon1]╗[indian_red]██[light_salmon1]╔══[indian_red]██[light_salmon1]╗  ╚══[indian_red]██[light_salmon1]╔══╝[indian_red]██[light_salmon1]╔══[indian_red]██[light_salmon1]╗[indian_red]██[light_salmon1]╔══[indian_red]██[light_salmon1]╗[indian_red]██[light_salmon1]║    [indian_red] ██[light_salmon1]╔════╝
 [indian_red]██████[light_salmon1]╔╝[indian_red]██[light_salmon1]║  [indian_red]██[light_salmon1]╗  [indian_red]█████[light_salmon1]╔╝[indian_red]██[light_salmon1]║  [indian_red]██[light_salmon1]║     [indian_red]██[light_salmon1]║   [indian_red]██[light_salmon1]║  [indian_red]██[light_salmon1]║[indian_red]██[light_salmon1]║  [indian_red]██[light_salmon1]║[indian_red]██[light_salmon1]║     ╚[indian_red]█████[light_salmon1]╗ 
 [indian_red]██[light_salmon1]╔═══╝ [indian_red]██[light_salmon1]║  ╚[indian_red]██[light_salmon1]╗ ╚═══[indian_red]██[light_salmon1]╗[indian_red]██[light_salmon1]║  [indian_red]██[light_salmon1]║     [indian_red]██[light_salmon1]║   [indian_red]██[light_salmon1]║  [indian_red]██[light_salmon1]║[indian_red]██[light_salmon1]║  [indian_red]██[light_salmon1]║[indian_red]██[light_salmon1]║      [light_salmon1]╚═══[indian_red]██[light_salmon1]╗
 [indian_red]██[light_salmon1]║     [light_salmon1]╚[indian_red]██████[light_salmon1]╔╝[indian_red]██████[light_salmon1]╔╝[indian_red]██████[light_salmon1]╔╝     [indian_red]██[light_salmon1][light_salmon1]║   ╚[indian_red]█████[light_salmon1][light_salmon1]╔╝╚[indian_red]█████[light_salmon1][light_salmon1]╔╝[indian_red]███████[light_salmon1][light_salmon1]╗[indian_red]██████[light_salmon1]╔╝
-[light_salmon1]╚═╝      ╚═════╝ ╚═════╝ ╚═════╝      ╚═╝    ╚════╝  ╚════╝ ╚══════╝╚═════╝[/]"""
+[light_salmon1]╚═╝      ╚═════╝ ╚═════╝ ╚═════╝      ╚═╝    ╚════╝  ╚════╝ ╚══════╝╚═════╝[/]\n"""
 
 console_text = f"""
  [bold deep_sky_blue1][1][/] Check ban                                │               [bold deep_sky_blue1][11][/] Find Weapon ID                         │
@@ -212,12 +213,12 @@ while True:
         tab_title = 'echo "\033]0;%s\007"' % f"Get Currency Threshold"; os.system(tab_title); clear()
         console.print(banner, justify="center"); console.print("Get Currency Threshold", justify="center")
         platform = input(f"{Fore.LIGHTCYAN_EX}[i]{Fore.RESET} Select a platform\n     {Fore.LIGHTBLUE_EX}[1]{Fore.RESET} iOS\n     {Fore.LIGHTBLUE_EX}[2]{Fore.RESET} Android\n")
-        if platform == "1": # iOS
+        if platform == "1" or platform == "ios" or platform == "iOS" or platform == "IOS": # iOS
             console.print("[green][!][/] Sending Request to Pixel Gun 3D Servers...", highlight=False)
             r = httpx.get("https://secure.pixelgunserver.com/pixelgun3d-config/advert-v2/advert-ios.json")
             j = r.json()
             console.print(f"\n[underline]iOS[/] Currency Threshold:\n     Gems  : {j['cheater']['gemThreshold']}\n     Coins : {j['cheater']['coinThreshold']}\n", highlight=False); exit = input(f"{Fore.LIGHTGREEN_EX}[!]{Fore.RESET} Press enter to exit...")
-        if platform == "2": # Android
+        if platform == "2" or platform == "android" or platform == "Android": # Android
             console.print("[green][!][/] Sending Request to Pixel Gun 3D Servers...")
             r = httpx.get("https://secure.pixelgunserver.com/pixelgun3d-config/advert-v2/advert-android.json")
             j = r.json()
@@ -231,6 +232,8 @@ while True:
         id = int(input(f"{Fore.LIGHTCYAN_EX}[i]{Fore.RESET} Enter User ID: "))
         currency = input(f"{Fore.LIGHTCYAN_EX}[i]{Fore.RESET} Available Currenies: (ClanSilver, GemsCurrency, Coins, PixelPassCurrency, RouletteAdsCurrency, Coupons, AdventNyCurrency)\nChoose a currency: ")
         amount = int(input(f"{Fore.LIGHTCYAN_EX}[i]{Fore.RESET} Enter Amount: "))
+        if amount > 2147483647:
+            input(f"{Fore.RED}[!]{Fore.RESET} Your amount must be less than 2,147,483,647. Press enter to exit...")
         times = int(input(f"{Fore.LIGHTCYAN_EX}[i]{Fore.RESET} Amount of times to send: "))
         parameters = encodejsonurl({"cmid":3783,"eid":1012,"uid": str(id),"dev":1,"c":"NIG","p":1,"v":"69.0.0","r":1,"cid":"1","t":1,"reg":1,"pl":0,"ip1":amount,"sp1":currency,"sp2":"YeetDisDude","ip2":1})
 
@@ -273,11 +276,11 @@ while True:
         tab_title = 'echo "\033]0;%s\007"' % f"Make Unsearchable Username"; os.system(tab_title); clear()
         console.print(banner, justify="center"); console.print("Generate Unsearchable Username", justify="center")
         username = input(f"{Fore.LIGHTCYAN_EX}[>]{Fore.RESET} Enter your Pixel Gun 3D Username: ")
-        if len(username) > 10:
-            input(f"{Fore.RED}[!]{Fore.RED} Username must be less than 10 characters.{Fore.RESET}")
+        if len(username) > 11:
+            input(f"{Fore.RED}[!]{Fore.RED} Username must be less than 11 characters.{Fore.RESET}")
         else:
             newusername = f"⁬{username}"
-            console.print(f"[green][i][/]New username: {newusername} | Copied to clipboard.")
+            console.print(f"[green][i][/]New username: {newusername} (an invisible character was added to the front) | Copied to clipboard.")
             pyperclip.copy(newusername)
             input(f"{Fore.LIGHTGREEN_EX}[!]{Fore.RESET} Press enter to exit...")
 

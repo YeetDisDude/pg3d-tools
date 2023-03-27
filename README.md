@@ -48,3 +48,4 @@ Its best if you use the New Terminal from the Microsoft Store [here](https://app
 - [TonicBoomerKewl](https://github.com/TonicBoomerKewl) - for the Item Record and Websocket Commands JSON
 - [Pulsed](https://github.com/ChrxnZ) - for the making the websocket feature
 
+[Discord](https://discord.gg/wnr9ME7enQ)

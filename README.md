@@ -5,6 +5,7 @@
 <p align="center">
   <a href=""><img src="https://img.shields.io/github/downloads/YeetDisDude/pg3d-tools/total.svg"></a>
   <a href=""><img src="https://img.shields.io/discord/1082866190097072158"></a>
+  <a href=""><img src="https://img.shields.io/github/v/release/YeetDisDude/pg3d-tools"></a>
 </p>
   
 # Usage

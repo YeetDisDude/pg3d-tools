@@ -2,6 +2,7 @@
 A Pixel Gun 3D Tool made in Python for Modding and other purposes.
 
 [![Github All Releases](https://img.shields.io/github/downloads/YeetDisDude/pg3d-tools/total.svg)]()
+[![Discord Online](https://img.shields.io/discord/1082866190097072158)
 
 # Usage
 1. Download Pixel Gun 3D Tools.py from releases tab or download the code as zip

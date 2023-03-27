@@ -7,6 +7,9 @@
   <a href=""><img src="https://img.shields.io/discord/1082866190097072158"></a>
   <a href=""><img src="https://img.shields.io/github/v/release/YeetDisDude/pg3d-tools"></a>
 </p>
+<p align="center">
+  <a href=""><img src="https://img.shields.io/github/stars/YeetDisDude/pg3d-tools?style=social"></a>
+</p>
   
 # Usage
 1. Download Pixel Gun 3D Tools.py from releases tab or download the code as zip

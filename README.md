@@ -3,8 +3,8 @@
 <p align="center">A Pixel Gun 3D Tool made in Python for Modding and other purposes.</p>
 
 <p align="center">
-  [![Github All Releases](https://img.shields.io/github/downloads/YeetDisDude/pg3d-tools/total.svg)]()
-  [![Discord Online](https://img.shields.io/discord/1082866190097072158)]()
+  <a href=""><img src="https://img.shields.io/github/downloads/YeetDisDude/pg3d-tools/total.svg"></a>
+  <a href=""><img src="https://img.shields.io/discord/1082866190097072158"></a>
 </p>
   
 # Usage

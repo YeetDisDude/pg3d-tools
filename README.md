@@ -47,12 +47,13 @@ Its best if you use the New Terminal from the Microsoft Store [here](https://app
 - Search Websocket command
   - Search for PG3D's websocket command(s)
   
+# Preview
 ![Image1](/image/pg3dtools1.png)
 ![Image2](/image/pg3dtools2.png)
 ![Image3](/image/pg3dtools3.png)
 
 # Credits
 - [TonicBoomerKewl](https://github.com/TonicBoomerKewl) - for the Item Record and Websocket Commands JSON
-- [Pulsed](https://github.com/ChrxnZ) - for the making the websocket feature
+- [Pulsed](https://github.com/ChrxnZ) - for the making the Websocket Communication feature
 
 [Discord](https://discord.gg/wnr9ME7enQ)

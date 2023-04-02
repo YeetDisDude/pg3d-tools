@@ -1,6 +1,7 @@
 
 <h1 align="center">Pixel Gun 3D Tools</h1>
 <p align="center">A Pixel Gun 3D Tool made in Python for Modding and other purposes.</p>
+<p align="center">Current Version: 0.2.0</p>
 
 <p align="center">
   <a href=""><img src="https://img.shields.io/github/downloads/YeetDisDude/pg3d-tools/total.svg"></a>
@@ -48,9 +49,9 @@ Its best if you use the New Terminal from the Microsoft Store [here](https://app
   - Search for PG3D's websocket command(s)
   
 # Preview
-![Image1](/image/pg3dtools1.png)
-![Image2](/image/pg3dtools2.png)
-![Image3](/image/pg3dtools3.png)
+![Image1](/image/1gui.png)
+![Image2](/image/2gui.png)
+![Image3](/image/3gui.png)
 
 # Credits
 - [TonicBoomerKewl](https://github.com/TonicBoomerKewl) - for the Item Record and Websocket Commands JSON

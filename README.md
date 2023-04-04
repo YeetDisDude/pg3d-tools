@@ -7,10 +7,10 @@
   <a href=""><img src="https://img.shields.io/github/downloads/YeetDisDude/pg3d-tools/total.svg"></a>
   <a href=""><img src="https://img.shields.io/discord/1082866190097072158"></a>
   <a href=""><img src="https://img.shields.io/github/v/release/YeetDisDude/pg3d-tools"></a>
-  [![HitCount](https://hits.dwyl.com/YeetDisDude/pixel-gun-3d.svg?style=flat-square)](http://hits.dwyl.com/YeetDisDude/pixel-gun-3d)
 </p>
 <p align="center">
   <a href=""><img src="https://img.shields.io/github/stars/YeetDisDude/pg3d-tools?style=social"></a>
+  [![HitCount](https://hits.dwyl.com/YeetDisDude/pixel-gun-3d.svg?style=flat-square)](http://hits.dwyl.com/YeetDisDude/pixel-gun-3d)
 </p>
   
 # Usage

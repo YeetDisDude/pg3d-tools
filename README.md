@@ -11,9 +11,7 @@
 <p align="center">
   <a href=""><img src="https://img.shields.io/github/stars/YeetDisDude/pg3d-tools?style=social"></a>
 </p>
-<center>
-    [![HitCount](https://hits.dwyl.com/YeetDisDude/pixel-gun-3d.svg?style=flat-square)](http://hits.dwyl.com/YeetDisDude/pixel-gun-3d)
-</center>
+[![HitCount](https://hits.dwyl.com/YeetDisDude/pixel-gun-3d.svg?style=flat-square)](http://hits.dwyl.com/YeetDisDude/pixel-gun-3d)
   
 # Usage
 1. Download Pixel Gun 3D Tools.py from releases tab or download the code as zip

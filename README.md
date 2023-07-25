@@ -16,15 +16,18 @@
 
 # Where to download
 You have the choice between a CLI (Command-Line-Interface) and a GUI (Graphical-User-Interface). The CLI version is mostly clean, but may be uneasy on the eyes. While on the other hand, the GUI is more clean, and easy to use.
+
 CLI: https://github.com/YeetDisDude/pg3d-tools/tree/main/cli/src
+
 GUI: https://github.com/YeetDisDude/pg3d-tools/tree/main/gui/src
   
 # Usage
 1. Download Pixel Gun 3D Tools.py from releases tab or download the code as zip
 2. Run the exe or run py pg3dtools.py if you installed the python script
-3. **dont worry, the script will auto install the required modules for you**
 
-Its best if you use the New Terminal from the Microsoft Store [here](https://apps.microsoft.com/store/detail/windows-terminal/9N0DX20HK701)
+**Dont worry, the script will auto install the required modules for you**
+
+It's best if you use the New Terminal from the Microsoft Store [here](https://apps.microsoft.com/store/detail/windows-terminal/9N0DX20HK701)
 
 # To do (Features)
 - Dump (coming soon)

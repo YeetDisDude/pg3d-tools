@@ -22,10 +22,10 @@
 Its best if you use the New Terminal from the Microsoft Store [here](https://apps.microsoft.com/store/detail/windows-terminal/9N0DX20HK701)
 
 # To do (Features)
-- WebSocket
-  - WebSocket Message Encrypt
-  - WebSocket Message Decrypt
-  - Get Websocket Key & IV (Initialization Vector)
+~~- WebSocket~~
+  ~~- WebSocket Message Encrypt~~
+  ~~- WebSocket Message Decrypt~~
+  ~~- Get Websocket Key & IV (Initialization Vector)~~
 - Dump (coming soon)
   - Cpp2IL dump [gui]
   - Il2Cpp dump [gui]

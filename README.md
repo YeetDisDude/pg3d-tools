@@ -13,6 +13,11 @@
 </p>
 
 [![HitCount](https://hits.dwyl.com/YeetDisDude/pixel-gun-3d.svg?style=flat-square)](http://hits.dwyl.com/YeetDisDude/pixel-gun-3d)
+
+# Where to download
+You have the choice between a CLI (Command-Line-Interface) and a GUI (Graphical-User-Interface). The CLI version is mostly clean, but may be uneasy on the eyes. While on the other hand, the GUI is more clean, and easy to use.
+CLI: https://github.com/YeetDisDude/pg3d-tools/tree/main/cli/src
+GUI: https://github.com/YeetDisDude/pg3d-tools/tree/main/gui/src
   
 # Usage
 1. Download Pixel Gun 3D Tools.py from releases tab or download the code as zip
